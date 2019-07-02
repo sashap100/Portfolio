@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<!-- Decide on section margins-->
+<head>
+  <!--<link rel="stylesheet" href="style.css">-->
+  <!--<script src="script.js"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Average|Cinzel+Decorative|Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    h3 {
+      text-align: center;
+      color:black;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 10px;
+      font-family: 'Special Elite', cursive;
+    }
+    p {
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 20px;
+      font-family: 'Average', serif;
+      display: none;
+      overflow: hidden;
+    }
+    #Pooja {
+      margin-left:50px;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 20px;
+      display: none;
+      overflow: hidden;
+    }
+    #Header {
+      background-color: beige;
+      text-align: left;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 10px;
+      font-family: 'Special Elite', cursive;
+    }
+    #About {
+     background-color:#FF827F;
+     margin-left:50px;
+     margin-right:50px
+    }
+    #Design {
+      background-color: #FFC563;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #Editing {
+      background-color:#FFF963;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #Entrepreneurship {
+      background-color:palegreen;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #News {
+      background-color:lightskyblue;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #Video {
+      margin-left: 50px;
+      margin-right: 50px;
+      background-color:tan;
+    }
+    #Writing {
+      background-color: plum;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #Resume {
+      background-color:pink;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    #PictureResume {
+      padding: 20px;
+      display: none;
+      overflow: hidden;
+    }
+    .collapsible {
+      background-color:transparent;
+      color: black;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      margin-left: 0px;
+      margin-right: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 10px;
+      font-family: 'Special Elite', cursive;
+    }
+    .active, .collapsible:hover {
+      background-color: gainsboro;
+    }
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      float:right;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    #myImg:hover {opacity: 0.7;}
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 35%;
+      max-width: 700px;
+    }
+
+    #caption {
+      margin: auto;
+      display: block;
+      width: 35%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    .modal-content, #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <title>Sasha Poor</title>
+</head>
+
+<img id="myImg" src="Sasha.png" alt="Photo of Sasha." style="width:125px;height:125px;">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="SashaFull" >
+  <div id="Sasha Poor"></div>
+</div>
+
+
+<body>
+
+  <div id="Header">
+    <h1>Sasha Poor</h1>
+    <h2>Journalism portfolio</h2>
+  </div>
+
+
+  <div id="About">
+    <button class="collapsible"><h3>About Me</h3></button>
+    <p>My name is <a href="https://verdemagazine.com/author/sapoor20" style="color:crimson">Sasha Poor</a>, and I am currently a junior at Palo Alto High School. I am the copy editor and features editor for Verde and also work as a staff writer for the magazine. I also enjoy swimming, reading, musicals and playing with my cats. I have lived in Palo Alto my whole life, but my parents are from Sri Lanka and New Zealand, and I enjoy visiting family there.</p>
+  </div>
+
+  <div id="Design">
+    <button class="collapsible"><h3>Design</h3></button>
+    <p>I have created and implemented the design for most of my stories, along with other writers or alone. I began doing very little design on my first few stories. However, I began to work with design more as I got more comfortable with it. Eventually, I designed a story almost entirely on my own. When I began, I did not think design would be an aspect of journalism that I would particularly enjoy. However, as I gained experience, I became more confident and I looked forward to designing my stories. This progression has placed me in a position to be able to complete an entire story on my own and has given me the experience to advise others on their design as well.</p>
+  </div>
+
+  <div id="Editing">
+    <button class="collapsible"><h3>Editing</h3></button>
+    <p>For the past six issues, I have been the copy editor for Verde Magazine. This means that I read nearly every story carefully and check for spelling, grammar and AP style errors. The majority of this work is done at the end of the production cycle, which has required me to balance the time that I devote to editing with the time I spend working on my own stories. This has prompted me to get my own stories done earlier so that I have time free to edit. This work has also required me to work more closely with other members of the publication who I am not directly working with. I am currently the features editor for Verde Magazine. As features editor, I was involved in the process of choosing which features would be written and published in the magazine. I also edited all of the features for big picture changes in text and design as well as smaller errors in grammar and AP style. I also got experience with keeping people on track with their stories and aiding writers with legal issues that arose from one of the features. Overall, being features editor has given me more editing and leadership experience.</p>
+  </div>
+
+  <div id="Entrepreneurship">
+    <button class="collapsible"><h3>Entrepreneurship</h3></button>
+    <p>Throughout my time at Verde, I have attempted to sell advertisements to many businesses in Palo Alto. I have successful sold and designed two. When I first began at Verde, I found this process very uncomfortable. I now feel much more confident approaching businesses. This work has also helped me find ways to determine who would be the best candidates for me to approach. It has brought me out of my comfort zone and allowed me to learn new skills that I otherwise would not have. These skills have helped me in other projects that require fundraising or approaching strangers by giving me more confidence.</p>
+  </div>
+
+  <div id="News">
+    <button class="collapsible"><h3>News Gathering</h3></button>
+    <p>Nearly all of my work for Verde Magazine has involved gathering news. For the stories that most involved it, I contacted sources relevant to the story, followed the progression of the story and compiled it into a story. I have developed this skill over my time on the Verde staff by writing verbatim launch stories, news stories and features involving developing stories. I follow local news closely and am able to produce a quality news article in a relatively short time frame. My confidence finding and contacting sources has also grown as I have worked on producing stories involving news gathering.</p>
+  </div>
+
+  <div id="Writing">
+    <button class="collapsible"><h3>Writing</h3></button>
+    <p>I have written articles for Verde Magazine and one for Via Verde. I have written a variety of stories, including features, news, profiles, reviews and personal perspectives. This has given me experience with many different styles of writing, allowing me to find the kinds of writing that I enjoy the most and also giving me the opportunity to work outside of my comfort zone. This has allowed me to push myself to write about topics that I may not have chosen if I had not had this experience and develop more versatility in my writing.</p>
+  </div>
+  <div id="Video">
+    <button class="collapsible"><h3>Video</h3></button>
+    <iframe id="Pooja" width="560" height="315" src="https://www.youtube.com/embed/QUlltrsfNWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div id="Resume">
+    <button class="collapsible"><h3>Resume</h3></button>
+    <img id="PictureResume" src="resume.png" alt="Sasha's resume.">
+  </div>
+
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      }
+      else {
+        content.style.display = "block";
+      }
+    });
+  }
+  var modal = document.getElementById("myModal");
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("SashaFull");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+    var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
